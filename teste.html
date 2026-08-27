@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <title>Teste</title>
+</head>
+<body class="body"></body>
+<button id="temaclaro">tema claro</button>
+<button id="temaescuro">tema escuro</button>
+</body>
+<style>
+  3temaclaro.claro {
+    background-color: #F5F5F5;
+    color: #000000;
+  }
+  #temascuro.claro {
+    background-color: #F5F5F5;
+    color: #000000;
+  }
+  .body {
+    background-color: #323232;
+    color: #FFFFFF;
+  }
+  .body.claro {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+  #temaescuro {
+    background-color: #303134;
+    color: #FFFFFF;
+  }
+  #temaclaro {
+    background-color: #303134;
+    color: #FFFFFF;
+  }
+</style>
+<script>
+const btntemaescuro = document.getElementById('temaescuro')
+const btntemaclaro = document.getElementById('temaclaro')
+const body = document.querySelector('.body')
+btntemaclaro.onclick = function() {
+  btntemaclaro.classLit.add(claro')
+  btntemaescuro.classList.add('claro')
+  body.classList.add('claro')
+  }
+  btntemaescuro.onclick = function() {
+    btntemaclaro.classList.remove('claro')
+    btntemaescuro.classList.remove('claro')
+    body.classList.remove('claro')
+  }
+</script>
